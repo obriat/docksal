@@ -446,7 +446,7 @@ Diagnostics/maintenance/updates
   cleanup [options]        	Remove all unused Docker images, unused Docksal volumes and containers
   diagnose                 	Show diagnostic information for troubleshooting and bug reporting
   sysinfo                  	Show system information
-  update [options]         	Update Docksal
+  update [options]         	Update Docksal.
   version (--version, v, -v)	Print fin version. [v, -v] prints short version
 
 Installed Addons:
@@ -545,6 +545,12 @@ Update Docksal system components to the latest stable version
 Usage: update
 
 Options:
-  DOCKSAL_VERSION=develop fin update	Update Docksal to the latest development version
+  DOCKSAL_VERSION=develop fin update    Update Docksal to the latest development version
+  --system-images                       Update system images
+  --project-images                      Update project images
+  --self                                Update fin executbale
+  --tools                               Update tools
+  --stack                               Update config files
+  --bash-complete                       Install bash autocomplete
 ```
 
